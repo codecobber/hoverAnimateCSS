@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  <style>
+
+    body{
+    	background-color: #fff;
+    	color: #444;
+    	font-family: 'Open Sans', sans-serif;
+    	text-align: center;
+    }
+
+    div{
+    	width:75%;
+    	margin: 40px auto;
+    }
+
+    button{
+    	background-color: orange;
+    	padding:20px;
+    	border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border:none;
+    }
+    button:hover{
+    	background-color: #2196f3;
+    	color:#fff;
+
+    }
+  </style>
+
+<script>
+  $(document).ready(function(){
+  	console.log('ready');
+  		$('.hovMe').mouseenter(function(){
+  			var effect = $(this).attr('data-animate');
+  			$(this).addClass(effect);
+  		});
+  		$('.hovMe').mouseleave(function(){
+  			var effect = $(this).attr('data-animate');
+  			$(this).removeClass(effect);
+  		});
+  });
+</script>
+</head>
+
+<body>
+	<div>
+		<h1>Animate CSS with Hover</h1>
+
+		<button class="hovMe" data-animate="animated infinite bounce">Bounce</button>
+		<button class="hovMe" data-animate="animated jello">Jello</button>
+		<button class="hovMe" data-animate="animated flash">Flash</button>
+		<button class="hovMe" data-animate="animated fadeOut">Fade Out</button>
+		<button class="hovMe" data-animate="animated wobble">Wobble</button>
+		<button class="hovMe" data-animate="animated pulse">Pulse</button>
+		<button class="hovMe" data-animate="animated rubberBand">Rubber Band</button>
+		<button class="hovMe" data-animate="animated hinge">Hinge</button>
+	</div>
+
+	<div>
+		<button class="hovMe" data-animate="animated shake">Shake</button>
+		<button class="hovMe" data-animate="animated headShake">Head Shake</button>
+		<button class="hovMe" data-animate="animated swing">Swing</button>
+		<button class="hovMe" data-animate="animated tada">Tada</button>
+		<button class="hovMe" data-animate="animated flip">Flip</button>
+	</div>
+	</div>
+	
+</body>
+
+</html>
