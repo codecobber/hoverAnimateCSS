@@ -17,4 +17,9 @@ When hovering over an element that posseses the class 'hovMe', jquery then finds
 
 When the mouse leaves the element the reverse occures and the relevant classes that were added on hover are now removed from the class of the element.
 
-Simple really!
+Not all the effects in animate css suit the hover method, some are jittery and look bad but others like fadeOut, pulse, bounce and others work well. 
+
+I also developed something else that works well with Animate css and scrolling,  it's called Scrollcheck https://github.com/codecobber/scrollCheck
+
+
+Enjoy.
